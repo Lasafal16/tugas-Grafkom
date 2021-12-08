@@ -11,6 +11,7 @@ print('=====================================================')
 x = x1
 y = y1
 
+#----kondisi dimana jika x1==x2
 if x1 == x2:
     titik_A = []
     titik_B = []
@@ -20,7 +21,8 @@ if x1 == x2:
         titik_B.append(y+i)
     grafik.plot(titik_A, titik_B)
     grafik.show()
-
+    
+#------kondisi dimana jika y1=y2
 elif y1 == y2:
     titik_A = []
     titik_B = []
@@ -31,8 +33,9 @@ elif y1 == y2:
     grafik.plot(titik_A, titik_B)
     grafik.grid()
     grafik.show()
-
- else:
+    
+#-----kondisi jika tidak terpenuhi
+else:
     titik_A = []
     titik_B = []
     m_gradiengaris = (y2 - y1) / (x2 - x1)
@@ -44,3 +47,6 @@ elif y1 == y2:
         titik_A.append(x)
         titik_B.append(ya)
         x+=1
+        
+    grafik.plot(titik_A,titik_B)
+    grafik.show()
