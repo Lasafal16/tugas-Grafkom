@@ -10,3 +10,13 @@ print('=====================================================')
 
 x = x1
 y = y1
+
+if x1 == x2:
+    titik_A = []
+    titik_B = []
+    for i in range(0, y2, 1):
+        print('Garis yang di lewati oleh titik A da titik B yaitu', x, ',', y+i)
+        titik_A.append(x)
+        titik_B.append(y+i)
+    grafik.plot(titik_A, titik_B)
+    grafik.show()
