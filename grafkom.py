@@ -21,7 +21,7 @@ if x1 == x2:
     grafik.plot(titik_A, titik_B)
     grafik.show()
 
-    elif y1 == y2:
+elif y1 == y2:
     titik_A = []
     titik_B = []
     for i in range(0, x2, 1):
