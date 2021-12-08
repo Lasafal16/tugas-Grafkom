@@ -20,3 +20,14 @@ if x1 == x2:
         titik_B.append(y+i)
     grafik.plot(titik_A, titik_B)
     grafik.show()
+
+    elif y1 == y2:
+    titik_A = []
+    titik_B = []
+    for i in range(0, x2, 1):
+        print('Garis yang di lewati oleh titik A dan B yaitu', x+i, ',', y)
+        titik_A.append(x+i)
+        titik_B.append(y)
+    grafik.plot(titik_A, titik_B)
+    grafik.grid()
+    grafik.show()
